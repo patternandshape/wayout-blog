@@ -1,0 +1,30 @@
+/* Base Styles -------------------- */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: peru;
+  font-family: sans-serif;
+}
+
+img {
+  max-width: 600px;
+  height: auto;
+  border-radius: 10px;
+}
+
+li {
+  margin-bottom: 15px;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Plaster';
+  font-size: 7em!important;
+  color: white!important;
+}
+
+
+/* Pseudo-classes ------------------ */
