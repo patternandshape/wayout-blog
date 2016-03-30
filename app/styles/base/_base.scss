@@ -5,18 +5,23 @@
 }
 
 body {
-  background: peru;
+  background: #d5995d;
   font-family: sans-serif;
 }
 
 img {
   max-width: 600px;
   height: auto;
-  border-radius: 10px;
+  border-radius: 5px;
+}
+
+ul {
+  list-style: none;
 }
 
 li {
   margin-bottom: 15px;
+  list-style: none;
 }
 
 h1 {
@@ -24,6 +29,14 @@ h1 {
   font-family: 'Plaster';
   font-size: 7em!important;
   color: white!important;
+}
+
+h4, h5 {
+  font-weight: bold;
+}
+
+p {
+  font-weight: 300;
 }
 
 
