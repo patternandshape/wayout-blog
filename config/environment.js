@@ -5,7 +5,7 @@ module.exports = function(environment) {
     modulePrefix: 'wayout-blog',
     environment: environment,
     contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
-    firebase: 'https://YOUR-FIREBASE-NAME.firebaseio.com/',
+    firebase: 'https://way-out.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
     googleFonts: [
