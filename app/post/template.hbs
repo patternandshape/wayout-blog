@@ -7,10 +7,11 @@
 {{update-post post=model.singlePost update2="update3"}}
 <button {{action 'delete' model.singlePost}}>Delete</button>
 <div class="add-comment">
-  
+
 {{add-comment post=model.singlePost saveComment2="saveComment3"}}
 <ul class="comment-list">
   {{#each model.singlePost.comments as |comment|}}
+  <button {{action 'deleteComment' comment}}>Delete</button>
   <li>{{comment.name}}</li>
   <li>{{comment.body}}</li>
   {{/each}}

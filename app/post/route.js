@@ -14,6 +14,11 @@ export default Ember.Route.extend({
         this.transitionTo('index');
       }
     },
+      deleteComment(comment){
+        if(confirm('Are you sure you want to delete your comment?')){
+          comment.destroyRecord();
+        }
+      },
       update3(post, params){
         Object.keys(params).forEach(function(key){
           if(params[key]!==undefined){
