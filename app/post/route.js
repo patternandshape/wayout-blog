@@ -30,7 +30,7 @@ export default Ember.Route.extend({
         addComment.save().then(function(){
           return post.save();
         });
-        this.transitionTo('post', params.post);
+        this.transitionTo('model.singlePost', params.post);
       }
     }
 });
