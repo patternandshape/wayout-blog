@@ -4,8 +4,10 @@
 </div>
 <div class="side-bar">
   <ul>
-  {{#each model2.posts as |post|}}
-    {{#link-to 'post' post.id}}<li>{{side-bar post=post }} </li>{{/link-to}}
+  {{#each model as |post|}}
+    {{#link-to 'post' post.id}}
+    <li>{{side-bar post=post }} </li>
+  {{/link-to}}
   {{/each}}
   </ul>
   <ul class="info-links">

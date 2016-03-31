@@ -7,7 +7,7 @@
 
 <div class="side-bar">
   <ul>
-  {{#each model2.posts as |post|}}
+  {{#each model as |post|}}
     {{#link-to 'post' post.id}}<li>{{side-bar post=post }} </li>{{/link-to}}
   {{/each}}
   </ul>
