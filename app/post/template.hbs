@@ -11,6 +11,7 @@
 {{add-comment post=model.singlePost saveComment2="saveComment3"}}
 <ul class="comment-list">
   {{#each model.singlePost.comments as |comment|}}
+  {{update-comment  comment=comment updateComment2="updateComment3"}}
   <button {{action 'deleteComment' comment}}>Delete</button>
   <li>{{comment.name}}</li>
   <li>{{comment.body}}</li>

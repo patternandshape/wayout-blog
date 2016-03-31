@@ -1,0 +1,19 @@
+{{#if updateCommentForm}}
+<h3 class="update-post">Edit</h3>
+    <div>
+      <form>
+        <div class="form-group">
+          <label for="name">Name:</label>
+          {{input value=name class="name"}}
+        </div>
+
+        <div class="form-group comment-body">
+          <label for="body">Comment:</label>
+          {{input value=body class="body"}}
+        </div>
+        <button {{action 'updateComment1' comment}}>Post</button>
+      </form>
+    </div>
+{{else}}
+        <button {{action 'updateCommentForm'}}>Edit</button>
+{{/if}}

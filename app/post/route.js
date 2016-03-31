@@ -36,6 +36,14 @@ export default Ember.Route.extend({
           return post.save();
         });
         this.transitionTo('model.singlePost', params.post);
+      },
+      updateComment3(comment, params){
+        Object.keys(params).forEach(function(key) {
+          if(params[key]!==undefined){
+            comment.set(key,params[key]);
+          }
+        });
+        comment.save();
       }
     }
 });
