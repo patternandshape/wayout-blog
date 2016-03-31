@@ -9,6 +9,7 @@
   {{#each model.posts as |post|}}
     {{#link-to 'post' post.id}}<li>{{side-bar post=post }} </li>{{/link-to}}
   {{/each}}
+  {{new-post save2="save3"}}
   </ul>
   <ul class="info-links">
     <li>{{#link-to 'about'}}about{{/link-to}}</li>
