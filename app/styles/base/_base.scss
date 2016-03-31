@@ -62,7 +62,7 @@ h3 {
   font-weight: bold;
 }
 
-.new-post {
+.new-post, .update-post {
   font-family: 'Plaster';
   color: white!important;
   text-shadow: 20px 20px black;
@@ -71,6 +71,12 @@ h3 {
 
 label {
   color: black;
+}
+
+.comment-list {
+  ul {
+    list-style: none;
+  }
 }
 
 /* Pseudo-classes ------------------ */

@@ -3,7 +3,17 @@
 <img src={{model.singlePost.image}} alt={{model.singlePost.title}}>
 <p>{{model.singlePost.body}}</p>
 <h5>Posted by {{model.singlePost.author}} at {{model.singlePost.date}}</h5>
+{{update-post post=model.singlePost update2="update3"}}
 <button {{action 'delete' model.singlePost}}>Delete</button>
+<div class="add-comment">
+{{add-comment post=model.singlePost saveComment2="saveComment3"}}
+<ul class="comment-list">
+  {{#each model.singlePost.comments as |comment|}}
+  <li>{{comment.name}}</li>
+  <li>{{comment.body}}</li>
+  {{/each}}
+</ul>
+</div>
 </div>
 
 <div class="side-bar">

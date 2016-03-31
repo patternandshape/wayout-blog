@@ -1,23 +1,21 @@
 import Ember from 'ember';
-// var moment = require('moment');
+
 export default Ember.Component.extend({
-  addNewPost: false,
+  updatePostForm: false,
   actions: {
-    postFormShow(){
-      this.set('addNewPost', true);
+    updatePostForm(){
+      this.set('updatePostForm', true);
     },
-    save1(){
-      var newDate = new Date();
+    update1(post) {
       var params = {
         title: this.get('title'),
         image: this.get('image'),
         body: this.get('body'),
         author: this.get('author'),
-        date: newDate.getFullYear(),
         category: this.get('category'),
       };
-      this.set('addNewPost', false);
-      this.sendAction('save2', params);
+      this.set('updatePostForm', false);
+      this.sendAction('update2', post, params);
     }
   }
 });
