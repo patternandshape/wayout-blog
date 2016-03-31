@@ -7,7 +7,11 @@
 <div class="side-bar">
   <ul>
   {{#each model.posts as |post|}}
-    <li>{{side-bar post=post }}</li>
+    {{#link-to 'post' post.id}}<li>{{side-bar post=post }} </li>{{/link-to}}
   {{/each}}
+  </ul>
+  <ul class="info-links">
+    <li>{{#link-to 'about'}}about{{/link-to}}</li>
+    <li>{{#link-to 'contact'}}contact us!{{/link-to}}</li>
   </ul>
 </div>
