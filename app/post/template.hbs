@@ -3,14 +3,15 @@
 <img src={{model.image}} alt={{model.title}}>
 <p>{{model.body}}</p>
 <h5>Posted by {{model.author}} at {{model.date}}</h5>
+<button {{action 'delete' model}}>Delete</button>
 </div>
 
 <div class="side-bar">
-  <ul>
+  <!-- <ul>
   {{#each model2.posts as |post|}}
     {{#link-to 'post' post.id}}<li>{{side-bar post=post }} </li>{{/link-to}}
   {{/each}}
-  </ul>
+  </ul> -->
   <ul class="info-links">
     <li>{{#link-to 'about'}}about{{/link-to}}</li>
     <li>{{#link-to 'contact'}}contact us!{{/link-to}}</li>
