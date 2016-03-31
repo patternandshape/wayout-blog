@@ -1,2 +1,16 @@
-
-<p>this is the about page</p>
+<div class="about">
+  <h3>this is the about page</h3>
+  <p>This is a blog about art and ember and routes and about routes and ands alot.</p>
+</div>
+<div class="side-bar">
+  <ul>
+  {{#each model2.posts as |post|}}
+    {{#link-to 'post' post.id}}<li>{{side-bar post=post }} </li>{{/link-to}}
+  {{/each}}
+  </ul>
+  <ul class="info-links">
+    <li>{{#link-to 'about'}}about{{/link-to}}</li>
+    <li>{{#link-to 'contact'}}contact us!{{/link-to}}</li>
+    <li>{{#link-to 'index'}}home{{/link-to}}</li>
+  </ul>
+</div>
