@@ -5,7 +5,7 @@ export default Ember.Route.extend({
     return Ember.RSVP.hash({
       singlePost: this.store.findRecord('post', params.post_id),
       allPost: this.store.findAll('post')
-    })
+    });
   },
   actions: {
     delete(model){
