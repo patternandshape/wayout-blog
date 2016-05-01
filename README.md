@@ -27,9 +27,9 @@ This blog is made using Ember and Firebase and includes capabilities to edit, de
 * Node
 * Bower
 * Firebase
-* HTML
-* SCSS
 * Git
+* SCSS
+* HTML
 * Bootstrap
 * Google Fonts
 * Font Awesome
